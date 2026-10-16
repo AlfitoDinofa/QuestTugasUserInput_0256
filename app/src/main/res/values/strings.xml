@@ -11,5 +11,7 @@
     <string name="skill_android">Android</string>
     <string name="skill_uiux">UI/UX</string>
     <string name="skill_web">Web</string>
+    <string name="proceed">Proceed</string>
+    <string name="format_tanggal">dd/MM/yyyy</string>
 
 </resources>

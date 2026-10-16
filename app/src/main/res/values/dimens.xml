@@ -2,5 +2,7 @@
 <resources>
     <dimen name="tinggi_header">300dp</dimen>
     <dimen name="margin_atas_card">240dp</dimen>
+    <dimen name="radius_card">32dp</dimen>
+    <dimen name="radius_field">16dp</dimen>
 
 </resources>

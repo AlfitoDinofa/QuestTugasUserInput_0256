@@ -13,5 +13,7 @@
     <string name="skill_web">Web</string>
     <string name="proceed">Proceed</string>
     <string name="format_tanggal">dd/MM/yyyy</string>
+    <string name="ok">OK</string>
+    <string name="batal">Batal</string>
 
 </resources>

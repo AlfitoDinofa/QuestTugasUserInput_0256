@@ -129,3 +129,10 @@ fun FormBiodataScreen() {
                         )
                     }
 
+                    OutlinedTextField(
+                        value = email, onValueChange = { email = it },
+                        label = { Text(stringResource(R.string.email)) },
+                        singleLine = true, shape = bentukField,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+

@@ -84,3 +84,33 @@ fun FormBiodataScreen() {
                     .height(dimensionResource(R.dimen.tinggi_header))
             )
 
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(top = dimensionResource(R.dimen.margin_atas_card))
+                    .shadow(dimensionResource(R.dimen.elevasi_card), bentukCard)
+                    .clip(bentukCard)
+                    .background(colorResource(R.color.putih_card))
+            ) {
+                Column(
+                    modifier = Modifier
+                        .verticalScroll(rememberScrollState())
+                        .padding(dimensionResource(R.dimen.padding_layar)),
+                    verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.jarak))
+                ) {
+                    Text(
+                        text = stringResource(R.string.judul_form),
+                        style = MaterialTheme.typography.headlineMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(R.color.ungu_judul),
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    Text(
+                        text = stringResource(R.string.subjudul_form),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = colorResource(R.color.abu_subjudul),
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+

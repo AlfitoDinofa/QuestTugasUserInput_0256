@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Meet 5 Prak</string>
     <string name="judul_form">Form Biodata</string>
+    <string name="subjudul_form">Silahkan isi biodata Anda dibawah ini !!!</string>
 </resources>

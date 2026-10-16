@@ -53,3 +53,23 @@ fun FormBiodataScreen() {
             email.isNotBlank() && tglLahir.isNotBlank() &&
             experience.isNotBlank() && skillDipilih.isNotEmpty()
 
+    if (dialogTanggal) {
+        val state = rememberDatePickerState()
+        DatePickerDialog(
+            onDismissRequest = { dialogTanggal = false },
+            confirmButton = {
+                TextButton(onClick = {
+                    state.selectedDateMillis?.let {
+                        tglLahir = SimpleDateFormat(polaTanggal, Locale.getDefault()).format(Date(it))
+                    }
+                    dialogTanggal = false
+                }) { Text(stringResource(R.string.ok)) }
+            },
+            dismissButton = {
+                TextButton(onClick = { dialogTanggal = false }) {
+                    Text(stringResource(R.string.batal))
+                }
+            }
+        ) { DatePicker(state = state) }
+    }
+

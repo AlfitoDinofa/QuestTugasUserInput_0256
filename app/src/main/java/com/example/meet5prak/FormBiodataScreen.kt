@@ -195,3 +195,26 @@ fun FormBiodataScreen() {
                         }
                     }
 
+                    Button(
+                        onClick = { },
+                        enabled = formSiap,
+                        shape = bentukField,
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(R.color.ungu_judul),
+                            disabledContainerColor = colorResource(R.color.abu_nonaktif)
+                        ),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(dimensionResource(R.dimen.tinggi_tombol))
+                    ) {
+                        Text(
+                            text = stringResource(R.string.proceed),
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -218,3 +218,28 @@ fun FormBiodataScreen() {
     }
 }
 
+@Composable
+private fun FieldPilihan(
+    nilai: String,
+    label: String,
+    ikon: ImageVector,
+    deskripsi: String,
+    onKlik: () -> Unit,
+    modifier: Modifier = Modifier,
+    menu: @Composable () -> Unit = {}
+) {
+    Box(modifier = modifier) {
+        OutlinedTextField(
+            value = nilai,
+            onValueChange = {},
+            readOnly = true,
+            singleLine = true,
+            label = { Text(label) },
+            trailingIcon = { Icon(imageVector = ikon, contentDescription = deskripsi) },
+            shape = RoundedCornerShape(dimensionResource(R.dimen.radius_field)),
+            modifier = Modifier.fillMaxWidth()
+        )
+        Box(modifier = Modifier.matchParentSize().clickable(onClick = onKlik))
+        menu()
+    }
+}

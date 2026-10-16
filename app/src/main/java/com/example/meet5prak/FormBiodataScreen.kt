@@ -164,3 +164,34 @@ fun FormBiodataScreen() {
                         }
                     }
 
+                    Text(
+                        text = stringResource(R.string.pilih_skill),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(R.color.hitam_teks)
+                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        daftarSkill.forEach { skill ->
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.clickable {
+                                    if (skill in skillDipilih) skillDipilih.remove(skill)
+                                    else skillDipilih.add(skill)
+                                }
+                            ) {
+                                Checkbox(
+                                    checked = skill in skillDipilih,
+                                    onCheckedChange = null
+                                )
+                                Text(
+                                    text = stringResource(skill),
+                                    style = MaterialTheme.typography.bodySmall
+                                )
+                            }
+                        }
+                    }
+

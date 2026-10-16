@@ -114,3 +114,18 @@ fun FormBiodataScreen() {
                         modifier = Modifier.fillMaxWidth()
                     )
 
+                    Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.jarak_kecil))) {
+                        OutlinedTextField(
+                            value = namaDepan, onValueChange = { namaDepan = it },
+                            label = { Text(stringResource(R.string.nama_depan)) },
+                            singleLine = true, shape = bentukField,
+                            modifier = Modifier.weight(1f)
+                        )
+                        OutlinedTextField(
+                            value = namaBelakang, onValueChange = { namaBelakang = it },
+                            label = { Text(stringResource(R.string.nama_belakang)) },
+                            singleLine = true, shape = bentukField,
+                            modifier = Modifier.weight(1f)
+                        )
+                    }
+

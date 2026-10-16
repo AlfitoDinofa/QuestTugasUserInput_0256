@@ -73,3 +73,14 @@ fun FormBiodataScreen() {
         ) { DatePicker(state = state) }
     }
 
+    Scaffold(containerColor = colorResource(R.color.latar_layar)) { padding ->
+        Box(modifier = Modifier.fillMaxSize().padding(padding)) {
+            Image(
+                painter = painterResource(R.drawable.bg_header),
+                contentDescription = stringResource(R.string.cd_header),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(dimensionResource(R.dimen.tinggi_header))
+            )
+

@@ -6,4 +6,7 @@
     <string name="nama_belakang">Nama Belakang</string>
     <string name="email">Email</string>
     <string name="tgl_lahir">Tgl Lahir</string>
+    <string name="experience">Experience</string>
+    <string name="pilih_skill">Pilih Skill Anda :</string>
+
 </resources>

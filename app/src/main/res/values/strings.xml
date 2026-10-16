@@ -15,5 +15,8 @@
     <string name="format_tanggal">dd/MM/yyyy</string>
     <string name="ok">OK</string>
     <string name="batal">Batal</string>
+    <string name="cd_header">Gambar header</string>
+    <string name="cd_pilih_tanggal">Pilih tanggal</string>
+    <string name="cd_buka_menu">Buka menu</string>
 
 </resources>

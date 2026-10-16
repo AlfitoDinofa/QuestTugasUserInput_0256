@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Meet 5 Prak</string>
+    <string name="judul_form">Form Biodata</string>
+    <string name="subjudul_form">Silahkan isi biodata Anda dibawah ini !!!</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="email">Email</string>
+    <string name="tgl_lahir">Tgl Lahir</string>
+    <string name="experience">Experience</string>
+    <string name="pilih_skill">Pilih Skill Anda :</string>
+    <string name="skill_android">Android</string>
+    <string name="skill_uiux">UI/UX</string>
+    <string name="skill_web">Web</string>
+    <string name="proceed">Proceed</string>
+    <string name="format_tanggal">dd/MM/yyyy</string>
+    <string name="ok">OK</string>
+    <string name="batal">Batal</string>
+    <string name="cd_header">Gambar header</string>
+    <string name="cd_pilih_tanggal">Pilih tanggal</string>
+    <string name="cd_buka_menu">Buka menu</string>
+    <string-array name="daftar_experience">
+        <item>Kurang dari 1 tahun</item>
+        <item>1 - 3 tahun</item>
+        <item>Lebih dari 3 tahun</item>
+    </string-array>
+</resources>

@@ -3,5 +3,7 @@
     <color name="ungu_judul">#FF673AB7</color>
     <color name="putih_card">#FFFFFFFF</color>
     <color name="latar_layar">#FF1A1A1A</color>
-
+    <color name="abu_subjudul">#FF757575</color>
+    <color name="hitam_teks">#FF212121</color>
+    <color name="abu_nonaktif">#FFE0E0E0</color>
 </resources>

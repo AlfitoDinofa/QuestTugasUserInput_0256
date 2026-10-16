@@ -136,3 +136,31 @@ fun FormBiodataScreen() {
                         modifier = Modifier.fillMaxWidth()
                     )
 
+                    Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.jarak_kecil))) {
+                        FieldPilihan(
+                            nilai = tglLahir,
+                            label = stringResource(R.string.tgl_lahir),
+                            ikon = Icons.Default.DateRange,
+                            deskripsi = stringResource(R.string.cd_pilih_tanggal),
+                            onKlik = { dialogTanggal = true },
+                            modifier = Modifier.weight(1f)
+                        )
+                        FieldPilihan(
+                            nilai = experience,
+                            label = stringResource(R.string.experience),
+                            ikon = Icons.Default.ArrowDropDown,
+                            deskripsi = stringResource(R.string.cd_buka_menu),
+                            onKlik = { menuTerbuka = true },
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            DropdownMenu(expanded = menuTerbuka, onDismissRequest = { menuTerbuka = false }) {
+                                daftarExperience.forEach { pilihan ->
+                                    DropdownMenuItem(
+                                        text = { Text(pilihan) },
+                                        onClick = { experience = pilihan; menuTerbuka = false }
+                                    )
+                                }
+                            }
+                        }
+                    }
+
